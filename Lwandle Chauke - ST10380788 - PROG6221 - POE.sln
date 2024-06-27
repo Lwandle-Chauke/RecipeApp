@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lwandle Chauke - ST10380788 - PROG6221 - POE", "Lwandle Chauke - ST10380788 - PROG6221 - POE\Lwandle Chauke - ST10380788 - PROG6221 - POE.csproj", "{0CB26D1C-9158-4D40-BA5C-1EF1D50A7C95}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CB26D1C-9158-4D40-BA5C-1EF1D50A7C95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CB26D1C-9158-4D40-BA5C-1EF1D50A7C95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CB26D1C-9158-4D40-BA5C-1EF1D50A7C95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CB26D1C-9158-4D40-BA5C-1EF1D50A7C95}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C14F212F-91B9-4DC5-A297-2D553F2715F0}
+	EndGlobalSection
+EndGlobal

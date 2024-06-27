@@ -1,0 +1,8 @@
+<UserControl x:Class="Lwandle_Chauke___ST10380788___PROG6221___POE.ViewRecipesControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Width="Auto" Height="Auto">
+    <Grid>
+        <ListBox Name="lstRecipes" Margin="5"/>
+    </Grid>
+</UserControl>
