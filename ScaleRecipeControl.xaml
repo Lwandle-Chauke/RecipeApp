@@ -6,9 +6,9 @@
         <StackPanel>
             <ComboBox Name="cmbRecipes" Margin="5"/>
             <ComboBox Name="cmbScaleFactor" Margin="5">
-                <ComboBoxItem Content="Half" />
-                <ComboBoxItem Content="Double" />
-                <ComboBoxItem Content="Triple" />
+                <ComboBoxItem Content="Half" Tag="0.5"/>
+                <ComboBoxItem Content="Double" Tag="2"/>
+                <ComboBoxItem Content="Triple" Tag="3"/>
             </ComboBox>
             <Button Name="btnScale" Content="Scale Recipe" Width="100" Margin="5" Click="BtnScale_Click"/>
         </StackPanel>

@@ -6,12 +6,38 @@
              xmlns:local="clr-namespace:Lwandle_Chauke___ST10380788___PROG6221___POE"
              mc:Ignorable="d"
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-        <StackPanel>
-            <TextBox Name="txtRecipeName" PlaceholderText="Enter recipe name" Margin="5"/>
-            <TextBox Name="txtNumIngredients" PlaceholderText="Enter number of ingredients" Margin="5"/>
-            <!-- Add additional fields for ingredients and steps as needed -->
-            <Button Name="btnSaveRecipe" Content="Save Recipe" Width="100" Margin="5" Click="BtnSaveRecipe_Click"/>
+    <Grid Background="Pink">
+        <TextBlock Text="ENTER RECIPE" FontWeight="Bold" FontSize="50" FontFamily="Arial" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0"
+                  Foreground="White"/>
+
+        <StackPanel Margin="60">
+            <TextBox Name="txtRecipeName" Margin="0,20,0,5" Height="30">Enter recipe name</TextBox>
+            <TextBox Name="txtNumIngredients" Margin="0,5,0,5" Height="30" >Enter number of ingredients</TextBox>
+
+            <ItemsControl Name="ingredientsItemsControl">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Margin="0,5">
+                            <TextBox Name="txtIngredientName" >Ingredient name</TextBox>
+                            <ComboBox Name="cmbFoodGroup" >Select food group</ComboBox>
+                            <TextBox Name="txtCalories" >Calories per ingredient</TextBox>
+                        </StackPanel>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+
+            <TextBox Name="txtNumSteps" Margin="0,10,0,5" Height="30">Enter number of steps</TextBox>
+
+            <ItemsControl Name="stepsItemsControl">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBox Name="txtStep" Margin="0,5" Height="30" >Step description</TextBox>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+
+            <Button Name="btnSaveRecipe" Height="30" VerticalAlignment="Center"  Content="Save Recipe" Width="100" Margin="0,20" Click="BtnSaveRecipe_Click"
+                    Background="White"/>
         </StackPanel>
     </Grid>
 </UserControl>

@@ -3,21 +3,35 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Lwandle_Chauke___ST10380788___PROG6221___POE"
+        xmlns:local="clr-namespace:RecipeApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Recipe App" Height="600" Width="800"
+        Background="LightPink">
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="10">
-            <Button x:Name="btnAddRecipe" Content="Add Recipe" Width="100" Margin="5"/>
-            <Button x:Name="btnViewRecipes" Content="View Recipes" Width="100" Margin="5"/>
-            <!-- Add other buttons as needed -->
+        <!-- Header Section -->
+        <StackPanel Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,20">
+            <TextBlock Text="WELCOME TO MY RECIPE APP" Foreground="White" FontSize="50" FontFamily="Arial" FontWeight="Bold" Margin="10"/>
         </StackPanel>
 
-        <ContentControl x:Name="contentControl" Grid.Row="1" Margin="10"/>
+        <!-- Menu Section -->
+        <StackPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center" Margin="20,20">
+            <TextBlock Text="What would you like to do today?" Foreground="White" FontSize="30" FontWeight="Bold" Margin="0,0,0,10"/>
+
+            <Button Content="Enter Recipe" Width="120" Background="White" Height="40" Margin="0,0,0,5" Click="BtnEnterRecipe_Click"/>
+            <Button Content="View Recipes" Width="120" Background="White" Height="40" Margin="0,0,0,5" Click="BtnViewRecipes_Click"/>
+            <Button Content="Scale Recipes" Width="120" Background="White" Height="40" Margin="0,0,0,5" Click="BtnScaleRecipes_Click"/>
+            <Button Content="Reset Quantities" Width="120" Background="White" Height="40" Margin="0,0,0,5" Click="BtnResetQuantities_Click"/>
+            <Button Content="Exit" Width="120" Background="White" Height="40" Margin="0,0,0,5" Click="BtnExit_Click"/>
+        </StackPanel>
+
+        <!-- Content Section (to be populated dynamically based on menu selection) -->
+        <ContentControl x:Name="contentControl" Grid.Row="1" Margin="200,20,20,20"/>
+
     </Grid>
 </Window>
