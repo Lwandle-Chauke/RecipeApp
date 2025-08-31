@@ -101,7 +101,7 @@ Welcome to the Recipe Management Application! This application is designed to he
 
 ## Feedback and Contributions
 
-We welcome feedback and contributions to improve the Recipe Management Application. If you have suggestions, encounter bugs, or wish to contribute to the project, please contact us at [support@recipeapp.com](mailto:support@recipeapp.com).
+We welcome feedback and contributions to improve the Recipe Management Application. If you have suggestions, encounter bugs, or wish to contribute to the project, please contact us at [lwandlec0@gmail.com](mailto:lwandlec0@gmail.com).
 
 ## Lecture Feedback
 
@@ -119,7 +119,6 @@ This project is licensed under the MIT License. See the LICENSE file for more in
 
 For any inquiries or support requests, please contact:
 
-- **Email**: [support@recipeapp.com](mailto:support@recipeapp.com)
-- **Phone**: 123-456-7890
+- **Email**: [lwandlec0@gmail.com](mailto:lwandlec0@gmail.com)
 
 Thank you for using the Recipe Management Application! We hope this tool helps you manage and enjoy your culinary creations.
