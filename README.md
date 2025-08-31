@@ -1,124 +1,115 @@
-# README for Recipe Management Application
+# Recipe App
 
-## Table of Contents
+## Background
 
-1. [Introduction](#introduction)
-2. [Features](#features)
-3. [System Requirements](#system-requirements)
-4. [Installation](#installation)
-5. [Usage](#usage)
-   - [Add Recipe](#add-recipe)
-   - [View Recipes](#view-recipes)
-   - [Scale Recipe](#scale-recipe)
-6. [Troubleshooting](#troubleshooting)
-7. [Feedback and Contributions](#feedback-and-contributions)
-8. [Lecture Feedback](#lecture-feedback)
-9. [License](#license)
-10. [Contact](#contact)
+This project is inspired by the story of **Sanele**, who, after attending his friend Lindiwe’s birthday party and tasting her family’s incredible cooking, decided he wanted to learn how to cook delicious meals himself.
 
-## Introduction
+To help him (and others) start this journey, this application was created: a **Recipe App** where users can store, manage, and explore recipes in both a simple and user-friendly way.
 
-Welcome to the Recipe Management Application! This application is designed to help users manage their recipes efficiently, including adding new recipes, viewing existing recipes, and scaling ingredients. 
+---
+
+## Project Overview
+
+The Recipe App is a **C# application** that evolves from a command-line interface to a graphical interface built with **WPF**. It allows users to create, store, and interact with recipes digitally, while also learning core programming concepts such as **object-oriented design, collections, delegates, and GUI development**.
+
+Key features include:
+
+* Adding recipes with ingredients and preparation steps.
+* Scaling ingredient quantities (half, double, or triple).
+* Resetting recipes to their original state.
+* Managing multiple recipes with nutritional details.
+* Tracking calories and warning users when limits are exceeded.
+* Filtering recipes or building a menu with food group analysis via a pie chart.
+
+---
 
 ## Features
 
-- Add new recipes with ingredient details and preparation steps.
-- View and sort recipes in alphabetical order.
-- Scale recipes by 0.5, 2, or 3 times the original quantities.
+### Recipe Management
 
-## System Requirements
+* Create and store an unlimited number of recipes.
+* Add a name, list of ingredients, and preparation steps.
+* Ingredients include **name, quantity, unit, calories, and food group**.
+* View recipes in a clear, structured format.
 
-- Operating System: Windows 7 or later
-- .NET Framework: 4.7.2 or later
-- RAM: 2 GB or more
-- Disk Space: 100 MB of free space
-- Screen Resolution: 1024x768 or higher
+### Scaling & Resetting
 
-## Installation
+* Scale recipes by factors of **0.5, 2, or 3**.
+* Reset ingredients to their original values at any time.
 
-1. **Download the Installer**:
-   - Obtain the installer from the provided source or download link.
+### Nutrition Tracking
 
-2. **Run the Installer**:
-   - Double-click the downloaded installer file.
-   - Follow the on-screen instructions to complete the installation.
-   - Accept the license agreement and choose the installation directory.
+* Automatically calculate the **total calories** of a recipe.
+* Alert users when a recipe exceeds **300 calories**.
 
-3. **Finish Installation**:
-   - Once the installation is complete, click 'Finish'.
-   - The application should now be installed on your system.
+### Recipe Browsing & Filtering
 
-## Usage
+* Display all recipes alphabetically.
+* Filter recipes by:
 
-### Add Recipe
+  * Ingredient name
+  * Food group
+  * Maximum calories
 
-1. **Launch the Application**:
-   - Open the application via the desktop shortcut or Start Menu.
+### Menu & Food Group Analysis
 
-2. **Select 'Add Recipe'**:
-   - Click the 'Add Recipe' button from the main menu.
+* Select multiple recipes to form a **menu**.
+* Generate a **pie chart** showing the food group distribution across the menu.
 
-3. **Enter Recipe Details**:
-   - Input the recipe name, number of ingredients, ingredient details (name, food group, calories), number of steps, and step descriptions.
+### User Interface
 
-4. **Save Recipe**:
-   - Click the 'Save Recipe' button to save the recipe to your collection.
+* **Command Line (initial versions):** Simple text-based input/output.
+* **Graphical Interface (final version, WPF):**
 
-### View Recipes
+  * Buttons, forms, and menus for navigation.
+  * Interactive recipe list and filtering options.
+  * Data visualization with charts.
 
-1. **Select 'View Recipes'**:
-   - Click the 'View Recipes' button from the main menu.
+---
 
-2. **Browse Recipes**:
-   - Recipes are displayed in alphabetical order.
-   - Click on a recipe to view more details.
+## Testing
 
-### Scale Recipe
+* Unit tests are included to validate key functions such as calorie calculation.
+* Tests can be run in Visual Studio via **Test Explorer**.
 
-1. **Select 'Scale Recipe'**:
-   - Click the 'Scale Recipe' button from the main menu.
+---
 
-2. **Choose Recipe and Scale Factor**:
-   - Select a recipe from the drop-down list.
-   - Choose a scale factor (0.5, 2, or 3) by clicking the corresponding button.
+## How to Compile and Run
 
-3. **Confirm Scaling**:
-   - A message box will confirm that the recipe has been successfully scaled.
+### Requirements
 
-## Troubleshooting
+* [Visual Studio 2022+](https://visualstudio.microsoft.com/)
+* [.NET 6.0 or later](https://dotnet.microsoft.com/)
 
-- **Application Not Launching**:
-  - Ensure your system meets the requirements.
-  - Reinstall the application if necessary.
+### Steps
 
-- **Error Messages**:
-  - Ensure all fields are filled correctly when adding a recipe.
-  - Restart the application if errors persist.
+1. Clone this repository:
 
-- **Recipes Not Saving**:
-  - Check that all required fields are completed.
-  - Ensure there is sufficient disk space.
+   ```bash
+   git clone https://github.com/Lwandle-Chauke/recipe-app.git
+   ```
+2. Open the solution file (`RecipeApp.sln`) in Visual Studio.
+3. Build the solution (`Ctrl+Shift+B`).
+4. Run the application (`F5`).
 
-## Feedback and Contributions
+---
 
-We welcome feedback and contributions to improve the Recipe Management Application. If you have suggestions, encounter bugs, or wish to contribute to the project, please contact us at [lwandlec0@gmail.com](mailto:lwandlec0@gmail.com).
+## Repository & Versioning
 
-## Lecture Feedback
+The project is stored on GitHub with version tags marking milestones:
 
-Based on feedback from our lectures, we have made several improvements to the application:
+* **Part1** – Initial recipe app (single recipe, console).
+* **Part2** – Extended features (multiple recipes, calories, delegates).
+* **PoE** – Final graphical version (WPF).
 
-- **Logic Fixes**: We have refined the logic in part 2 of the code to ensure better performance and user experience. Specific issues related to recipe scaling and ingredient management have been addressed.
+[GitHub Repository Link](https://github.com/Lwandle-Chauke/recipe-app)
 
-- **User Interface Enhancements**: Based on user feedback, we have updated the UI to be more intuitive and visually appealing, including adding clear instructions and warning messages for calorie limits.
+---
 
-## License
+## Author
 
-This project is licensed under the MIT License. See the LICENSE file for more information.
+**Name:** Lwandle Chauke
+**Module:** PROG6212 – Portfolio of Evidence
+**Institution:** IIE MSA
 
-## Contact
-
-For any inquiries or support requests, please contact:
-
-- **Email**: [lwandlec0@gmail.com](mailto:lwandlec0@gmail.com)
-
-Thank you for using the Recipe Management Application! We hope this tool helps you manage and enjoy your culinary creations.
+---
